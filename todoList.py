@@ -24,6 +24,7 @@ def displayTodo():
             with open("todo.txt", "r") as todo:
                 for line in todo:
                     print(line)
+                    mc.postToChat(line)
         except:
             print("Could not open file!")
     else:
