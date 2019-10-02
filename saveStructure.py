@@ -27,7 +27,7 @@ def copyStructure(x1, y1, z1, x2, y2, z2):
         for column in range(width):
             structure[row].append([])
             for depth in range(length):
-                block = mc.getBlock(x1 + column, y1 + row, z1 + depth)
+                block = mc.getBlockWithData(x1 + column, y1 + row, z1 + depth)
                 structure[row][column].append(block)
 
     return structure
